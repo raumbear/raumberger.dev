@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build and Push the Docker Image
-        run: docker buildx build --platform linux/arm64 -t registry.lab.raumberger.net/raumberger-dev:${{ env.GITHUB_SHA }} --push .
+        run: docker buildx build --platform linux/arm64 -t registry.lab.raumberger.net/raumberger-dev:${{ github.sha }} --push .
       - name: Update Nomad Definition
-        run: sed 's/VERSION/${{ env.GITHUB_SHA }}/' nginx.nomad | nomad run -
+        run: sed 's/VERSION/${{ github.sha }}/' nginx.nomad | nomad run -
         env:
           NOMAD_ADDR: https://nomad.lab.raumberger.net
