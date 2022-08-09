@@ -11,5 +11,4 @@ ADD . /var/jekyll
 RUN jekyll build
 
 FROM nginx:alpine
-COPY --from=builder /var/jekyll/_site/ /etc/nginx/html
-#ADD nginx.conf
+COPY --from=builder /var/jekyll/_site/ /usr/share/nginx/html
