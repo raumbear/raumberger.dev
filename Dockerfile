@@ -10,5 +10,5 @@ WORKDIR /var/jekyll
 ADD . /var/jekyll
 RUN jekyll build
 
-FROM nginx:alpine
+FROM nginx
 COPY --from=builder /var/jekyll/_site/ /usr/share/nginx/html
