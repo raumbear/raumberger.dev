@@ -8,7 +8,7 @@ RUN apt-get update && \
 
 WORKDIR /var/jekyll
 ADD . /var/jekyll
-RUN jekyll build
+RUN bundle exec jekyll build
 
 FROM nginx
 COPY --from=builder /var/jekyll/_site/ /usr/share/nginx/html
