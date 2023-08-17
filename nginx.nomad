@@ -11,6 +11,11 @@ job "raumberger.dev" {
     value = "storage"
   }
 
+  constraint {
+    attribute = "${attr.cpu.arch}"
+    value     = "arm64"
+  }
+
   group "web" {
     count = 2
 
@@ -25,6 +30,11 @@ job "raumberger.dev" {
       delay          = "30s"
       delay_function = "constant"
       unlimited      = true
+    }
+
+    resources {
+      cpu    = 1000
+      memory = 3000
     }
 
     task "nginx" {
