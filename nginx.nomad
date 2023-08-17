@@ -32,13 +32,13 @@ job "raumberger.dev" {
       unlimited      = true
     }
 
-    resources {
-      cpu    = 1000
-      memory = 3000
-    }
-
     task "nginx" {
       driver = "docker"
+
+      resources {
+        cpu    = 1000
+        memory = 3000
+      }
 
       config {
         image = "registry.lab.raumberger.net/raumberger-dev:VERSION"
