@@ -11,22 +11,23 @@ url: "https://raumberger.dev" # The base hostname & protocol for your site, e.g.
 # Author Settings
 author:
   name: Richard Raumberger
-  avatar: '/images/15.jpg'
+  avatar: '/images/background.jpg'
 
 
 #-------------------------------
 # Hero Settings
 hero:
   title: Richard Raumberger
-  description: Under Construction
-  image: '/images/01.jpg'
+  description: Software Developer and Hobby Astrophotograph
+  image: '/images/background.jpg'
 
 
 #-------------------------------
 # Contact Settings
 contact:
   email: richard@raumberger.net # Add your email for contact form
-  description: Norlin comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
+  description: Feel free to reach out to me.
+  endpoint: https://formspree.io/f/xyyqawdn
 
 # NOTE
 # Norlin theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
@@ -73,6 +74,13 @@ defaults:
 
 include:
   - _pages
+
+exclude:
+  - .gitignore
+  - Dockerfile
+  - nginx.nomad
+  - README.md
+  - styleguide.md
 
 # Tags
 tag_page_dir:         tag
