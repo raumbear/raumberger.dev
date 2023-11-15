@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact Me
+#title: Contact Me
 permalink: /contact/thanks
 image: '/images/background.jpg'
 ---
