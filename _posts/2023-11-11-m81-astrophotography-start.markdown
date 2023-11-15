@@ -40,3 +40,4 @@ Next time I'll make sure to take proper flat frames for each filter used and giv
 * 15x120s G
 * 11x120s B
 * 20 Dark / 50 Bias
+* Processed with PixInsight
