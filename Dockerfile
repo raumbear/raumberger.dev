@@ -12,4 +12,5 @@ RUN bundle update
 RUN bundle exec jekyll build
 
 FROM nginx
+ADD --from=builder /var/jekyll/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /var/jekyll/_site/ /usr/share/nginx/html

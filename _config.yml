@@ -81,6 +81,7 @@ exclude:
   - nginx.nomad
   - README.md
   - styleguide.md
+  - nginx.conf
 
 # Tags
 tag_page_dir:         tag
