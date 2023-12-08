@@ -2,7 +2,7 @@
 layout: page
 title: Contact Me
 permalink: /contact/
-image: '/images/background.jpg'
+image: '/images/background.png'
 ---
 <div class="form-container">
   {% if site.contact.description %}

@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: '/images/background.jpg'
+image: '/images/background.png'
 ---
 
 Welcome to my blog fellow Internet user.
