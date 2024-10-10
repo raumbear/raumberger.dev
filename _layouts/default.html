@@ -6,6 +6,10 @@
 <body>
   {% include cookie-consent.html %}
 
+  {% if site.data.settings.google-analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+
   {% include header.html %}
 
   <!-- begin content -->
@@ -14,7 +18,7 @@
   </main>
   <!-- end content -->
 
-  <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+  <div class="top" title="Top"><i class="fa-solid fa-chevron-up"></i></div>
   {% include footer.html %}
   {% include javascripts.html %}
 </body>
