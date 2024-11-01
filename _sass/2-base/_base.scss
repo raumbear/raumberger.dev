@@ -100,8 +100,8 @@ blockquote {
     content: '\201C';
     position: absolute;
     top: 0.59em;
-    left: -0.01em;
-    font-size: 4em;
+    left: -0.08em;
+    font-size: 3.5em;
     color: $brand-color;
   }
 
@@ -123,6 +123,10 @@ blockquote {
     padding: 20px 20px 20px 48px;
     font-size: 20px;
     line-height: 28px;
+
+    &:before {
+      top: 0.54em;
+    }
   }
 }
 

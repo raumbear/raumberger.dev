@@ -157,6 +157,7 @@
 .post__content,
 .page__content {
   color: $gray;
+
   a {
     border-bottom: 2px solid rgba($text-color, .1);
     &:hover {
@@ -164,6 +165,58 @@
       color: $text-color;
       text-decoration: none;
     }
+  }
+
+  img[src$='#wide'] {
+    display: block;
+    width: 100vw;
+    max-width: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .note, .tip, .important, .warning, .caution {
+    position: relative;
+    padding: 20px 0 20px 52px;
+    border-radius: 4px;
+    color: $white;
+    background: $blue-dark;
+
+    &::after {
+      content: "💡";
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: block;
+    }
+  }
+
+  .note {
+    border-left: 3px solid $callout-note;
+    background: rgba($callout-note, .1);
+  }
+
+  .tip {
+    border-left: 3px solid $callout-tip;
+    background: rgba($callout-tip, .1);
+  }
+
+  .important {
+    border-left: 3px solid $callout-important;
+    background: rgba($callout-important, .1);
+  }
+
+  .warning {
+    border-left: 3px solid $callout-warning;
+    background: rgba($callout-warning, .1);
+  }
+
+  .caution {
+    border-left: 3px solid $callout-caution;
+    background: rgba($callout-caution, .1);
   }
 }
 
